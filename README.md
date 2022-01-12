@@ -4,5 +4,5 @@
 - used jackson API for deserielization of response
 - validation of response body has been written in the validator folder
 - created test using testNG
-- validated launch success id
-- validated status code success, links, id
+- validation of landing success
+- validation of status code, success, links, id
