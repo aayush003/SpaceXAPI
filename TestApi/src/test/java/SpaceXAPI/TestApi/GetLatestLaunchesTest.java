@@ -16,11 +16,7 @@ public class GetLatestLaunchesTest {
 		RestAssured.baseURI = "https://api.spacexdata.com";
 		RequestSpecification httpRequest = RestAssured.given().relaxedHTTPSValidation();
 		Response response = httpRequest.request(Method.GET, "/v4/launches/latest");
-		String responseBody = response.getBody().asString();
-		System.out.println("Response Body is =>  " + responseBody);
-		
 		Getv4LaunchesValidator.getInstance().validateV4LatestLaunches(response);
-
 	}
 
 }

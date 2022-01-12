@@ -31,6 +31,7 @@ public class Getv4LaunchesValidator {
         return instance;
     }
 
+    //validating response code
 	public void validateV4LatestLaunches(Response response) {
 		
 		requestSpecBuilder.setContentType(ContentType.JSON);
